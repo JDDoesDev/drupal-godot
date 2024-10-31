@@ -1,0 +1,23 @@
+uuid: 37029a63-1774-4458-bfb3-611e068f5d73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_level_height
+    - node.type.level
+id: node.level.field_level_height
+field_name: field_level_height
+entity_type: node
+bundle: level
+label: 'Level Height'
+description: 'Height of the level in 16 x 16 tiles.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 20
+  prefix: ''
+  suffix: ''
+field_type: integer

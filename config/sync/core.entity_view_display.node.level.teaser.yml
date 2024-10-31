@@ -1,0 +1,34 @@
+uuid: 8b77ec04-50b8-4ba3-9de7-e0c3836f2607
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.level.body
+    - field.field.node.level.field_level_height
+    - field.field.node.level.field_level_width
+    - node.type.level
+  module:
+    - text
+    - user
+id: node.level.teaser
+targetEntityType: node
+bundle: level
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_level_height: true
+  field_level_width: true

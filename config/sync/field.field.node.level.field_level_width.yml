@@ -1,0 +1,23 @@
+uuid: e5287468-f080-46ba-9d66-7ed3d2784537
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_level_width
+    - node.type.level
+id: node.level.field_level_width
+field_name: field_level_width
+entity_type: node
+bundle: level
+label: 'Level Width'
+description: 'Level width in 16 x 16 tiles'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 30
+  prefix: ''
+  suffix: ''
+field_type: integer

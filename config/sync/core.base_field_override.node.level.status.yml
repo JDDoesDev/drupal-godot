@@ -1,0 +1,22 @@
+uuid: b1b0169b-2697-4c26-8366-23afa71fb880
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.level
+id: node.level.status
+field_name: status
+entity_type: node
+bundle: level
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

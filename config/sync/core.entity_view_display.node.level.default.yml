@@ -1,0 +1,48 @@
+uuid: 4b917260-7118-467c-afef-4e622a98ceb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.level.body
+    - field.field.node.level.field_level_height
+    - field.field.node.level.field_level_width
+    - node.type.level
+  module:
+    - text
+    - user
+id: node.level.default
+targetEntityType: node
+bundle: level
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_level_height:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_level_width:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

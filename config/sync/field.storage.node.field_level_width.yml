@@ -1,0 +1,20 @@
+uuid: 12684860-1575-421e-af73-a040666a1350
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_level_width
+field_name: field_level_width
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

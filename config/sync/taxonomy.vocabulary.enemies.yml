@@ -1,0 +1,9 @@
+uuid: 9e7c69e6-6ee3-497e-8e4a-297fa6c7af72
+langcode: en
+status: true
+dependencies: {  }
+name: Enemies
+vid: enemies
+description: null
+weight: 0
+new_revision: false
