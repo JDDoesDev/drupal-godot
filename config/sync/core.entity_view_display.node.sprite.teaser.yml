@@ -1,0 +1,32 @@
+uuid: 4a09d2ab-ee7a-4751-91a1-3a5660aab2d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sprite.body
+    - field.field.node.sprite.field_spritesheet
+    - node.type.sprite
+  module:
+    - text
+    - user
+id: node.sprite.teaser
+targetEntityType: node
+bundle: sprite
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_spritesheet: true

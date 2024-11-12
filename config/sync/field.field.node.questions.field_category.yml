@@ -1,0 +1,29 @@
+uuid: 8d54b367-065d-4d43-8623-f50372a8637b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.questions
+    - taxonomy.vocabulary.question_category
+id: node.questions.field_category
+field_name: field_category
+entity_type: node
+bundle: questions
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      question_category: question_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

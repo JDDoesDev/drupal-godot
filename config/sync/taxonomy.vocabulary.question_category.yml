@@ -1,0 +1,9 @@
+uuid: 798d7c41-819e-46ca-a4b3-1db7cf4d6252
+langcode: en
+status: true
+dependencies: {  }
+name: 'Question Category'
+vid: question_category
+description: null
+weight: 0
+new_revision: false

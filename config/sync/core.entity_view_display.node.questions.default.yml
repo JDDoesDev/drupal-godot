@@ -1,0 +1,44 @@
+uuid: 06f3bdd0-73ff-45a8-a91c-1d047a4464f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.questions.field_answer
+    - field.field.node.questions.field_category
+    - field.field.node.questions.field_question
+    - node.type.questions
+  module:
+    - user
+id: node.questions.default
+targetEntityType: node
+bundle: questions
+mode: default
+content:
+  field_answer:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_question:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -17,13 +17,20 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.5",
+        "drupal/consumers": "^1.19",
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
         "drupal/devel": "^5.3",
         "drupal/jsonapi_extras": "^3.26",
+        "drupal/jsonapi_include": "^1.8",
+        "drupal/jsonapi_permission_access": "^1.0",
+        "drupal/jsonapi_reference": "^2.0@alpha",
+        "drupal/oauth2_server": "^2.0@beta",
         "drupal/openapi_jsonapi": "^3.0",
         "drupal/openapi_ui_redoc": "^1.0@RC",
+        "drupal/restui": "^1.22",
+        "drupal/simple_oauth": "^6.0@beta",
         "drush/drush": "^13.3"
     },
     "conflict": {

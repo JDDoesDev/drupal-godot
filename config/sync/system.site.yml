@@ -2,9 +2,9 @@ _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
 uuid: 92452314-5a77-49df-ad26-a480765bcfd6
-name: 'Drush Site-Install'
+name: Godrupot
 mail: admin@example.com
-slogan: ''
+slogan: "Just because we can doesn't mean we should..."
 page:
   403: ''
   404: ''

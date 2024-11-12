@@ -1,0 +1,19 @@
+uuid: 1b7cba5b-6195-44b0-bafb-3de36fff9774
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_answer
+    - node.type.questions
+id: node.questions.field_answer
+field_name: field_answer
+entity_type: node
+bundle: questions
+label: Answer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

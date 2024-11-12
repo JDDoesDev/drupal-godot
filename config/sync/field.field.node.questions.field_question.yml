@@ -1,0 +1,19 @@
+uuid: 7410be17-23bb-4975-90c7-1d02be55f406
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_question
+    - node.type.questions
+id: node.questions.field_question
+field_name: field_question
+entity_type: node
+bundle: questions
+label: Question
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

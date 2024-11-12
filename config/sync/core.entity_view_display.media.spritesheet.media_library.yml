@@ -1,0 +1,32 @@
+uuid: 14b1fcca-dd7c-431b-ae12-740e3c1a46b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.spritesheet.field_media_image
+    - image.style.medium
+    - media.type.spritesheet
+  module:
+    - image
+id: media.spritesheet.media_library
+targetEntityType: media
+bundle: spritesheet
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_image: true
+  name: true
+  uid: true

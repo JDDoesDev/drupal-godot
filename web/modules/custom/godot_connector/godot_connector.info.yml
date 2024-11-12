@@ -1,0 +1,10 @@
+name: 'Godot Connector'
+type: module
+description: 'A module to assist with connecting between Drupal and Godot'
+package: Godot
+core_version_requirement: ^10 || ^11
+dependencies:
+  - jsonapi:jsonapi
+  - jsonapi_defaults:jsonapi_defaults
+  - jsonapi_extras:jsonapi_extras
+  - jsonapi_include:jsonapi_include

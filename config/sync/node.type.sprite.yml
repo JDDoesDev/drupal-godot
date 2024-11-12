@@ -1,0 +1,18 @@
+uuid: f7f6d852-4353-40fd-9ff0-82674d1aac10
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Sprite
+type: sprite
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

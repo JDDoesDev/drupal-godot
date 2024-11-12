@@ -1,0 +1,31 @@
+uuid: 01b7064a-fff0-4598-a8f2-3c0b088d530f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.spritesheet.field_media_image
+    - image.style.large
+    - media.type.spritesheet
+  module:
+    - image
+id: media.spritesheet.default
+targetEntityType: media
+bundle: spritesheet
+mode: default
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true
