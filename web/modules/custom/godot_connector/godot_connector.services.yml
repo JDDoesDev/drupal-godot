@@ -1,5 +1,5 @@
-# services:
-#   godot_connector.route_subscriber:
-#     class: Drupal\godot_connector\Routing\JsonApiRoutesAddPermission
-#     tags:
-#       - { name: event_subscriber }
+services:
+  godot_connector.route_subscriber:
+    class: Drupal\godot_connector\Routing\JsonApiRoutesAddPermission
+    tags:
+      - { name: event_subscriber }
