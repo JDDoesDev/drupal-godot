@@ -23,6 +23,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  godot_connector: 0
   help: 0
   history: 0
   image: 0
@@ -54,11 +55,13 @@ module:
   search: 0
   serialization: 0
   shortcut: 0
+  simple_oauth: 0
+  simple_oauth_static_scope: 0
+  simple_oauth_static_scope_example: 0
   system: 0
   taxonomy: 0
   text: 0
   toolbar: 0
-  update: 0
   user: 0
   views_ui: 0
   views: 10

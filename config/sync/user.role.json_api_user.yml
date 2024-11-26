@@ -1,9 +1,14 @@
 uuid: 4d510ddd-63e9-4445-bf65-bc315512c264
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - godot_connector
+    - simple_oauth
 id: json_api_user
 label: 'JSON API User'
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access jsonapi routes'
+  - 'grant simple_oauth codes'

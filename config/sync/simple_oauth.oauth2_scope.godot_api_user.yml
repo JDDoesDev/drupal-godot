@@ -1,0 +1,22 @@
+uuid: d5bf83b7-2468-489f-8098-a85630c2da9f
+langcode: en
+status: true
+dependencies: {  }
+id: godot_api_user
+name: 'godot:api:user'
+description: 'Godot Api User'
+grant_types:
+  authorization_code:
+    status: true
+    description: 'Here is description'
+  client_credentials:
+    status: true
+    description: 'Here is description'
+  refresh_token:
+    status: true
+    description: 'Here is description'
+umbrella: false
+parent: _none
+granularity: role
+permission: ''
+role: json_api_user
