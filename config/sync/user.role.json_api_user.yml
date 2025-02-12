@@ -5,10 +5,12 @@ dependencies:
   module:
     - godot_connector
     - simple_oauth
+    - system
 id: json_api_user
 label: 'JSON API User'
 weight: 4
 is_admin: null
 permissions:
+  - 'access content'
   - 'access jsonapi routes'
   - 'grant simple_oauth codes'
