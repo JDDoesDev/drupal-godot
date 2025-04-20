@@ -30,5 +30,6 @@ content:
     weight: 100
     region: content
 hidden:
+  book_navigation: true
   field_level_height: true
   field_level_width: true

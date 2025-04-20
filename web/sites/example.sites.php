@@ -14,7 +14,7 @@
  * configuration directory when no alias is found.
  *
  * Aliases are useful on development servers, where the domain name may not be
- * the same as the domain of the live servedasr. Since Drupal stores file paths in
+ * the same as the domain of the live server. Since Drupal stores file paths in
  * the database (files, system table, etc.) this will ensure the paths are
  * correct when the site is deployed to a live server.
  *

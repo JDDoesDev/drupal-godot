@@ -29,4 +29,5 @@ content:
     weight: 100
     region: content
 hidden:
+  book_navigation: true
   field_spritesheet: true
