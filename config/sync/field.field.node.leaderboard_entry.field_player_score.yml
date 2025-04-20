@@ -1,0 +1,23 @@
+uuid: 11cbd754-9ed8-4f8d-adba-0f038233e5dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_player_score
+    - node.type.leaderboard_entry
+id: node.leaderboard_entry.field_player_score
+field_name: field_player_score
+entity_type: node
+bundle: leaderboard_entry
+label: 'Player Score'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

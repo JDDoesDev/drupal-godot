@@ -7,3 +7,4 @@ web/libraries
 web/core
 
 .vscode
+web/sites/default/settings.php

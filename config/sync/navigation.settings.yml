@@ -2,7 +2,7 @@ _core:
   default_config_hash: Mq2SHXRYdiwA_7D6LuNOweIcF2zFwSsQaTXX5hpqbv0
 logo:
   provider: default
-  managed: null
+  path: ''
   max:
     filesize: 1048576
     height: 40

@@ -1,0 +1,19 @@
+uuid: c573ca74-eb00-4208-ab33-04f473fe5df0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_player_name
+    - node.type.leaderboard_entry
+id: node.leaderboard_entry.field_player_name
+field_name: field_player_name
+entity_type: node
+bundle: leaderboard_entry
+label: 'Player Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

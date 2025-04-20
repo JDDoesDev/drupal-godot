@@ -1,0 +1,44 @@
+uuid: a050c8b0-2ec7-4a1c-822b-133bb33eedb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.json_api_view
+    - field.field.node.leaderboard_entry.field_player_name
+    - field.field.node.leaderboard_entry.field_player_score
+    - node.type.leaderboard_entry
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.leaderboard_entry.json_api_view
+targetEntityType: node
+bundle: leaderboard_entry
+mode: json_api_view
+content:
+  field_player_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_player_score:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,35 @@
+uuid: 4b4b47de-aac6-42df-87a6-57b6b1d5f36d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.json_api_view
+    - field.field.node.page.body
+    - node.type.page
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.json_api_view
+targetEntityType: node
+bundle: page
+mode: json_api_view
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    weight: 101
+    region: content
+hidden:
+  book_navigation: true

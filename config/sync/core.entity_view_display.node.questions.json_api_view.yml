@@ -1,0 +1,51 @@
+uuid: b6e06c8a-9920-43d4-88e4-3bd3c5e9586b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.json_api_view
+    - field.field.node.questions.field_answer
+    - field.field.node.questions.field_category
+    - field.field.node.questions.field_question
+    - node.type.questions
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.questions.json_api_view
+targetEntityType: node
+bundle: questions
+mode: json_api_view
+content:
+  field_answer:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_question:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  book_navigation: true

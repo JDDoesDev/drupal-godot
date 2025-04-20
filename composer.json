@@ -55,9 +55,6 @@
     },
     "extra": {
         "patches": {
-            "drupal/simple_oauth": {
-                "Allow empty secrets": "https://www.drupal.org/files/issues/2024-05-07/3322325-13.patch"
-            }
         },
         "drupal-scaffold": {
             "locations": {
