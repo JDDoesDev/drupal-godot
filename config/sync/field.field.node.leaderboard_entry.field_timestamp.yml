@@ -1,0 +1,19 @@
+uuid: 1ad44ba9-5436-4db3-90b7-9911c3d9ad37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timestamp
+    - node.type.leaderboard_entry
+id: node.leaderboard_entry.field_timestamp
+field_name: field_timestamp
+entity_type: node
+bundle: leaderboard_entry
+label: Timestamp
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

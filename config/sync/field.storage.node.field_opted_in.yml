@@ -1,19 +1,17 @@
-uuid: 00e3eed9-fca4-4319-9b0c-dc4426bc5217
+uuid: c939be07-e76e-4f3c-8966-e4fd74b5aad2
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_player_score
-field_name: field_player_score
+id: node.field_opted_in
+field_name: field_opted_in
 entity_type: node
-type: integer
-settings:
-  unsigned: false
-  size: normal
+type: boolean
+settings: {  }
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

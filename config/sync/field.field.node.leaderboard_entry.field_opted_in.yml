@@ -1,0 +1,23 @@
+uuid: bd5fc79b-46d4-424b-904a-5124b43916c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opted_in
+    - node.type.leaderboard_entry
+id: node.leaderboard_entry.field_opted_in
+field_name: field_opted_in
+entity_type: node
+bundle: leaderboard_entry
+label: 'Opted In'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

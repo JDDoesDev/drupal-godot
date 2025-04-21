@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.leaderboard_entry.field_email_hidden
+    - field.field.node.leaderboard_entry.field_opted_in
     - field.field.node.leaderboard_entry.field_player_name
     - field.field.node.leaderboard_entry.field_player_score
+    - field.field.node.leaderboard_entry.field_timestamp
     - node.type.leaderboard_entry
   module:
     - path
@@ -28,6 +30,13 @@ content:
       placeholder: ''
       size: 60
     third_party_settings: {  }
+  field_opted_in:
+    type: boolean_checkbox
+    weight: 124
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_player_name:
     type: string_textfield
     weight: 121
@@ -42,6 +51,12 @@ content:
     region: content
     settings:
       placeholder: ''
+    third_party_settings: {  }
+  field_timestamp:
+    type: datetime_timestamp
+    weight: 125
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

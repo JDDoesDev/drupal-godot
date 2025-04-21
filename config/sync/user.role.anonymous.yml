@@ -2,14 +2,8 @@ uuid: a6ae08a5-a090-4dc1-8f3e-d5c9739f8e7f
 langcode: en
 status: true
 dependencies:
-  config:
-    - filter.format.restricted_html
   module:
-    - contact
-    - filter
     - godot_connector
-    - media
-    - search
     - system
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
@@ -20,7 +14,3 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access jsonapi routes'
-  - 'access site-wide contact form'
-  - 'search content'
-  - 'use text format restricted_html'
-  - 'view media'
