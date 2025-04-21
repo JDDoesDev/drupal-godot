@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.json_api_view
+    - field.field.node.leaderboard_entry.field_email_hidden
     - field.field.node.leaderboard_entry.field_player_name
     - field.field.node.leaderboard_entry.field_player_score
     - node.type.leaderboard_entry
@@ -36,9 +37,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-hidden: {  }
+hidden:
+  field_email_hidden: true
+  links: true

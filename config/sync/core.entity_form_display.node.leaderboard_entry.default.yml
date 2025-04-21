@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.leaderboard_entry.field_email_hidden
     - field.field.node.leaderboard_entry.field_player_name
     - field.field.node.leaderboard_entry.field_player_score
     - node.type.leaderboard_entry
@@ -18,6 +19,14 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_email_hidden:
+    type: email_default
+    weight: 123
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
     third_party_settings: {  }
   field_player_name:
     type: string_textfield

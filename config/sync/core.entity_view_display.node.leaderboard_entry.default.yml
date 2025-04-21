@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.leaderboard_entry.field_email_hidden
     - field.field.node.leaderboard_entry.field_player_name
     - field.field.node.leaderboard_entry.field_player_score
     - node.type.leaderboard_entry
@@ -13,6 +14,13 @@ targetEntityType: node
 bundle: leaderboard_entry
 mode: default
 content:
+  field_email_hidden:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_player_name:
     type: string
     label: above

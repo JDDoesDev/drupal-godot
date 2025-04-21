@@ -1,0 +1,19 @@
+uuid: 4f58b690-fa5a-4532-91f1-665da238dadf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leaderboard_entry
+  module:
+    - godot_connector
+    - node
+    - system
+id: leaderboard_api
+label: 'Leaderboard API'
+weight: 5
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access jsonapi routes'
+  - 'create leaderboard_entry content'
+  - 'edit own leaderboard_entry content'

@@ -1,0 +1,22 @@
+uuid: fde6af11-aa12-4394-b2a5-0e7f49f97902
+langcode: en
+status: true
+dependencies: {  }
+id: leaderboard
+name: leaderboard
+description: Leaderboard
+grant_types:
+  authorization_code:
+    status: false
+    description: ''
+  client_credentials:
+    status: true
+    description: ''
+  refresh_token:
+    status: false
+    description: ''
+umbrella: false
+parent: _none
+granularity_id: role
+granularity_configuration:
+  role: leaderboard_api

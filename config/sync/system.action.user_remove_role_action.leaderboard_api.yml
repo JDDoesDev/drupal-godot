@@ -1,0 +1,14 @@
+uuid: e7203c35-7b30-4828-9402-7a284827909e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.leaderboard_api
+  module:
+    - user
+id: user_remove_role_action.leaderboard_api
+label: 'Remove the Leaderboard API role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: leaderboard_api
