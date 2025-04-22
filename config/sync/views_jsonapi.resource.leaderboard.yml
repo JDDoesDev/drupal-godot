@@ -1,0 +1,10 @@
+uuid: 9ecb6bf5-54f1-43a3-a1f0-7294f8f645a6
+langcode: en
+status: true
+dependencies: {  }
+id: leaderboard
+label: Leaderboard
+view_id: leaderboard
+display_id: default
+path: views/leaderboard/default
+description: ''

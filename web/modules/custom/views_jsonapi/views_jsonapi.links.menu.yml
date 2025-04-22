@@ -1,0 +1,13 @@
+views_jsonapi.collection:
+  title: 'Views JSON:API'
+  description: 'Manage Views JSON:API resources.'
+  parent: system.admin_config_services
+  route_name: entity.views_jsonapi_resource.collection
+  weight: 5
+
+views_jsonapi.settings:
+  title: 'Views JSON:API Settings'
+  description: 'Configure Views JSON:API module settings.'
+  parent: views_jsonapi.collection
+  route_name: views_jsonapi.settings
+  weight: 10

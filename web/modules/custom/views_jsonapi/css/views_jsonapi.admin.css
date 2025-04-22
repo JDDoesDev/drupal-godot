@@ -1,0 +1,12 @@
+/**
+ * Admin styling for Views JSON:API module
+ */
+
+.views-jsonapi-resource-list-action {
+    margin-top: 1em;
+}
+
+/* Ensure action buttons are properly styled */
+.button--primary.button--add-views-jsonapi-resource {
+    margin: 0 0 1em 0;
+}

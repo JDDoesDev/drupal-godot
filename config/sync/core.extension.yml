@@ -34,7 +34,6 @@ module:
   jsonapi_extras: 0
   jsonapi_include: 0
   jsonapi_resources: 0
-  jsonapi_views: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
@@ -67,6 +66,7 @@ module:
   text: 0
   toolbar: 0
   user: 0
+  views_jsonapi: 0
   views_ui: 0
   views: 10
   standard: 1000

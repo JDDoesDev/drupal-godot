@@ -1,0 +1,8 @@
+name: Views JSON:API
+type: module
+description: 'Exposes Drupal Views to JSON:API with view filtering and formatting capabilities.'
+core_version_requirement: ^11
+package: Web services
+dependencies:
+  - drupal:views
+  - drupal:jsonapi

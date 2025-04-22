@@ -1,0 +1,45 @@
+views_jsonapi.settings:
+  type: config_object
+  label: 'Views JSON:API settings'
+  mapping:
+    include_view_metadata:
+      type: boolean
+      label: 'Include view metadata in responses'
+    preserve_field_names:
+      type: boolean
+      label: 'Preserve field names'
+    cache_enabled:
+      type: boolean
+      label: 'Enable caching'
+    cache_max_age:
+      type: integer
+      label: 'Cache maximum age'
+    filter_mapping:
+      type: boolean
+      label: 'Enable filter mapping'
+    include_entity_links:
+      type: boolean
+      label: 'Include entity links'
+
+views_jsonapi.resource.*:
+  type: config_entity
+  label: 'Views JSON:API Resource'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    view_id:
+      type: string
+      label: 'View ID'
+    display_id:
+      type: string
+      label: 'Display ID'
+    path:
+      type: string
+      label: 'Path'
+    description:
+      type: text
+      label: 'Description'

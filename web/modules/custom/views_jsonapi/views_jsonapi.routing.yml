@@ -1,0 +1,41 @@
+entity.views_jsonapi_resource.collection:
+  path: '/admin/config/services/views-jsonapi'
+  defaults:
+    _entity_list: 'views_jsonapi_resource'
+    _title: 'Views JSON:API Resources'
+  requirements:
+    _permission: 'administer views_jsonapi'
+
+entity.views_jsonapi_resource.add_form:
+  path: '/admin/config/services/views-jsonapi/add'
+  defaults:
+    _entity_form: 'views_jsonapi_resource.default'
+    _title: 'Add Views JSON:API Resource'
+  requirements:
+    _permission: 'administer views_jsonapi'
+
+entity.views_jsonapi_resource.edit_form:
+  path: '/admin/config/services/views-jsonapi/{views_jsonapi_resource}/edit'
+  defaults:
+    _entity_form: 'views_jsonapi_resource.default'
+    _title: 'Edit Views JSON:API Resource'
+  requirements:
+    _permission: 'administer views_jsonapi'
+
+entity.views_jsonapi_resource.delete_form:
+  path: '/admin/config/services/views-jsonapi/{views_jsonapi_resource}/delete'
+  defaults:
+    _entity_form: 'views_jsonapi_resource.delete'
+    _title: 'Delete Views JSON:API Resource'
+  requirements:
+    _permission: 'administer views_jsonapi'
+
+views_jsonapi.settings:
+  path: '/admin/config/services/views-jsonapi/settings'
+  defaults:
+    _form: '\Drupal\views_jsonapi\Form\ViewsJsonApiSettingsForm'
+    _title: 'Views JSON:API Settings'
+  requirements:
+    _permission: 'administer views_jsonapi'
+  options:
+    _admin_route: TRUE

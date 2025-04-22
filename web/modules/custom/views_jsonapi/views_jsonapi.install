@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Views JSON:API module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function views_jsonapi_install()
+{
+    \Drupal::messenger()->addStatus(t('Views JSON:API module has been installed. To expose a View via JSON:API, visit <a href=":url">Views JSON:API Resources</a>.', [
+        ':url' => '/admin/config/services/views-jsonapi',
+    ]));
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function views_jsonapi_uninstall()
+{
+    // Clear any cached routes
+    \Drupal::service('router.builder')->rebuild();
+}
+
+/**
+ * Implements hook_schema().
+ */
+function views_jsonapi_schema()
+{
+    // No custom database schema needed for config entities
+    return [];
+}
+
+/**
+ * Implements hook_requirements().
+ */
+function views_jsonapi_requirements($phase)
+{
+    $requirements = [];
+
+    if ($phase == 'runtime') {
+        // Check that the JSON:API module is enabled and properly configured
+        $moduleHandler = \Drupal::service('module_handler');
+
+        if (!$moduleHandler->moduleExists('jsonapi')) {
+            $requirements['views_jsonapi_jsonapi'] = [
+                'title' => t('Views JSON:API'),
+                'description' => t('The JSON:API module must be enabled for Views JSON:API to work properly.'),
+                'severity' => REQUIREMENT_ERROR,
+            ];
+        }
+    }
+
+    return $requirements;
+}

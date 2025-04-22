@@ -1,0 +1,5 @@
+entity.views_jsonapi_resource.add_form:
+  route_name: entity.views_jsonapi_resource.add_form
+  title: 'Add Views JSON:API Resource'
+  appears_on:
+    - entity.views_jsonapi_resource.collection

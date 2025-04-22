@@ -1,0 +1,9 @@
+services:
+  views_jsonapi.manager:
+    class: Drupal\views_jsonapi\ViewsJsonApiManager
+    arguments: ['@entity_type.manager', '@current_user', '@renderer', '@jsonapi.resource_type.repository']
+  views_jsonapi.route_subscriber:
+    class: Drupal\views_jsonapi\Routing\RouteSubscriber
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,107 @@
+<?php
+
+/**
+ * @file
+ * Contains views_jsonapi.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_help().
+ */
+function views_jsonapi_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        case 'help.page.views_jsonapi':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('The Views JSON:API module exposes Drupal Views as JSON:API resources, allowing you to leverage Views for data selection, filtering, and formatting while delivering the data in the JSON:API format.') . '</p>';
+            $output .= '<h3>' . t('Uses') . '</h3>';
+            $output .= '<dl>';
+            $output .= '<dt>' . t('Exposing Views as JSON:API endpoints') . '</dt>';
+            $output .= '<dd>' . t('Create a Views JSON:API Resource at Admin > Configuration > Web services > Views JSON:API Resources. Each resource will be automatically exposed as a JSON:API endpoint at /jsonapi/{resource_path}.') . '</dd>';
+            $output .= '<dt>' . t('Filtering data') . '</dt>';
+            $output .= '<dd>' . t('You can use standard JSON:API filter parameters like filter[field_name]=value or filter[field_name][operator]=value to filter the data, which will map to exposed filters in your View.') . '</dd>';
+            $output .= '<dt>' . t('Pagination') . '</dt>';
+            $output .= '<dd>' . t('Use page[offset] and page[limit] parameters for pagination, which will map to the View\'s pager settings.') . '</dd>';
+            $output .= '<dt>' . t('Sorting') . '</dt>';
+            $output .= '<dd>' . t('Use sort=field_name or sort=-field_name (for descending) parameters for sorting, which will map to the View\'s sort settings.') . '</dd>';
+            $output .= '</dl>';
+            return $output;
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function views_jsonapi_theme()
+{
+    return [
+        'views_jsonapi_settings_form' => [
+            'render element' => 'form',
+        ],
+    ];
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function views_jsonapi_entity_insert(EntityInterface $entity)
+{
+    if ($entity->getEntityTypeId() === 'views_jsonapi_resource') {
+        // Rebuild routes when a resource is added
+        \Drupal::service('router.builder')->rebuild();
+    }
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function views_jsonapi_entity_update(EntityInterface $entity)
+{
+    if ($entity->getEntityTypeId() === 'views_jsonapi_resource') {
+        // Rebuild routes when a resource is updated
+        \Drupal::service('router.builder')->rebuild();
+    }
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function views_jsonapi_entity_delete(EntityInterface $entity)
+{
+    if ($entity->getEntityTypeId() === 'views_jsonapi_resource') {
+        // Rebuild routes when a resource is deleted
+        \Drupal::service('router.builder')->rebuild();
+    }
+}
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function views_jsonapi_views_data_alter(array &$data)
+{
+    // Add JSON:API options to Views UI
+    foreach ($data as $table_name => $table_data) {
+        foreach ($table_data as $field_name => $field_data) {
+            if (isset($field_data['field'])) {
+                $data[$table_name][$field_name]['field']['jsonapi_field'] = TRUE;
+            }
+        }
+    }
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function views_jsonapi_module_implements_alter(&$implementations, $hook)
+{
+    // Ensure our hooks run last
+    if (in_array($hook, ['entity_insert', 'entity_update', 'entity_delete'])) {
+        $group = $implementations['views_jsonapi'];
+        unset($implementations['views_jsonapi']);
+        $implementations['views_jsonapi'] = $group;
+    }
+}
