@@ -35,6 +35,7 @@
         "drupal/openapi_ui_redoc": "^1.0@RC",
         "drupal/restui": "^1.22",
         "drupal/simple_oauth": "^6.0@beta",
+        "drupal/views_data_export": "^1.5",
         "drush/drush": "^13.5"
     },
     "conflict": {
