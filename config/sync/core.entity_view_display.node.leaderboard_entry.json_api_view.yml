@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.json_api_view
+    - field.field.node.leaderboard_entry.field_display_name
     - field.field.node.leaderboard_entry.field_email_hidden
     - field.field.node.leaderboard_entry.field_opted_in
     - field.field.node.leaderboard_entry.field_player_name
     - field.field.node.leaderboard_entry.field_player_score
-    - field.field.node.leaderboard_entry.field_timestamp
     - node.type.leaderboard_entry
   module:
     - layout_builder
@@ -40,7 +40,7 @@ content:
     weight: 1
     region: content
 hidden:
+  field_display_name: true
   field_email_hidden: true
   field_opted_in: true
-  field_timestamp: true
   links: true

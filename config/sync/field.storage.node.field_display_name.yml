@@ -1,14 +1,17 @@
-uuid: 75b44768-a3e4-4a14-b71c-4d09e5752226
+uuid: 4ba0b127-8281-4a9d-adc8-ed2e2ce5a42a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_timestamp
-field_name: field_timestamp
+id: node.field_display_name
+field_name: field_display_name
 entity_type: node
-type: timestamp
-settings: {  }
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

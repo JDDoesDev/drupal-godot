@@ -1,0 +1,6 @@
+include_view_metadata: true
+preserve_field_names: false
+cache_enabled: false
+cache_max_age: 3600
+filter_mapping: false
+include_entity_links: true

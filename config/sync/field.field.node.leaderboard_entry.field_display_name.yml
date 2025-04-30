@@ -1,19 +1,19 @@
-uuid: 1ad44ba9-5436-4db3-90b7-9911c3d9ad37
+uuid: 2b738cb8-03a4-4565-8d30-83aee3b19d2c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_timestamp
+    - field.storage.node.field_display_name
     - node.type.leaderboard_entry
-id: node.leaderboard_entry.field_timestamp
-field_name: field_timestamp
+id: node.leaderboard_entry.field_display_name
+field_name: field_display_name
 entity_type: node
 bundle: leaderboard_entry
-label: Timestamp
+label: 'Display Name'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: timestamp
+field_type: string

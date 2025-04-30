@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.leaderboard_entry.field_display_name
     - field.field.node.leaderboard_entry.field_email_hidden
     - field.field.node.leaderboard_entry.field_opted_in
     - field.field.node.leaderboard_entry.field_player_name
     - field.field.node.leaderboard_entry.field_player_score
-    - field.field.node.leaderboard_entry.field_timestamp
     - node.type.leaderboard_entry
   module:
     - user
@@ -16,6 +16,14 @@ targetEntityType: node
 bundle: leaderboard_entry
 mode: default
 content:
+  field_display_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_player_name:
     type: string
     label: above
@@ -32,25 +40,6 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_timestamp:
-    type: timestamp
-    label: above
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-      tooltip:
-        date_format: long
-        custom_date_format: ''
-      time_diff:
-        enabled: false
-        future_format: '@interval hence'
-        past_format: '@interval ago'
-        granularity: 2
-        refresh: 60
-    third_party_settings: {  }
-    weight: 2
     region: content
 hidden:
   field_email_hidden: true

@@ -1,16 +1,11 @@
 uuid: a6ae08a5-a090-4dc1-8f3e-d5c9739f8e7f
 langcode: en
 status: true
-dependencies:
-  module:
-    - godot_connector
-    - system
+dependencies: {  }
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
 label: 'Anonymous user'
 weight: 0
 is_admin: false
-permissions:
-  - 'access content'
-  - 'access jsonapi routes'
+permissions: {  }

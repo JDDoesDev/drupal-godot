@@ -5,6 +5,6 @@ dependencies: {  }
 id: leaderboard
 label: Leaderboard
 view_id: leaderboard
-display_id: default
+display_id: page_1
 path: views/leaderboard/default
 description: ''
