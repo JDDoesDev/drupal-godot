@@ -24,6 +24,7 @@
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.1",
         "drupal/devel": "^5.3",
+        "drupal/diff": "^2.0@beta",
         "drupal/json_api_book": "^1.1",
         "drupal/jsonapi_extras": "^3.26",
         "drupal/jsonapi_include": "^1.8",
